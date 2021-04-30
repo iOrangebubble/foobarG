@@ -1,0 +1,10 @@
+
+def solutions(x):
+    result = ""
+    for char in x:
+        if char.islower():
+            mirrored = ord("z")- (ord(char)-ord("a"))
+            result += chr(mirrored)
+        else:
+            result += char
+    return result
